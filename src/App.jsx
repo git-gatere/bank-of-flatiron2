@@ -10,9 +10,8 @@ function App() {
   return (
     <>
       <Title />
-      <SearchBar />
+      <SearchBar searchTerm={[]} setSearchTerm={[]} />
       <Input />
-      
       <Form transactions={[]} />
     </>
   );

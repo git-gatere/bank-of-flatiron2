@@ -29,7 +29,7 @@ function Input () {
     <input className="input" type="number" placeholder="Amount" value={amount} onChange={(e) => setAmount(e.target.value)}></input>
     </form>
     <br/>
-    <Form transactions={transactions}/>
+    
     <Button variant="secondary" className="btn">Add Transaction</Button>{' '}
     </>)
 }

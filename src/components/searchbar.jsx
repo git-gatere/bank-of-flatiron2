@@ -1,20 +1,18 @@
-import React from "react";
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+import React from 'react'
 
-function SearchBar({value, onChange}) {
-    return (
-        <InputGroup className="mb-3">
-            <Form.Control
-                placeholder="Search your recent transactions"
-                aria-label="Search your recent transactions"
-                aria-describedby="basic-addon2"
-                type="text"
-               value={value}
-              onChange={(e) => onChange(e.target.value)}
-            />
-        </InputGroup>
-    );
+
+function SearchBar({searchTerm, setSearchTerm}) {
+  return (<div>
+      <input
+        //id="search-input"
+        type="text"
+        placeholder="Search your Recent Transcations"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      
+    </div>
+  );
 }
 
 export default SearchBar;
